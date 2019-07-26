@@ -1,0 +1,11 @@
+.landingpage{
+    background-image: url("/home/moringa/Downloads/BeFunky-photo.jpg");
+    background-size: cover;
+    height: 600px
+    
+
+}
+.landingpage p{
+    padding:100px
+
+}
