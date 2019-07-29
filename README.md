@@ -25,11 +25,9 @@ open the code in your text editor.
 ## Live page
 https://Ndundiro.github.io/Pizza
 
-
-
 ## Support and contact details
 
-If you need any information on my projects please contact me (ndundirokamau@gmail.com)
+For any questions,concerns or collaboration ,please feel free to contact me through my email adress:Ndundirokamau@gmail.com
 
 ## Licence
 MIT Licence. Copyright (c) 2019 Ndundiro Kamau
