@@ -1,11 +1,11 @@
 # Pizza
-This is a project on a pizza eatery website where we receive orders from customers and deliver.
-
-## Author
-Ndundiro Kamau
-
+This is a project on a pizza eatery website where customers can place orders and get them  delivered.
 ## Description
-This is an application that will be able to receive a pizza order,type of crust and additional toppings desired.There is a form to fill in delivery details of location and phone number of the person.
+This is an application that will enable a user  to make a pizza order online.Customers can specify the type of pizza,size,the type of crust and even add additional toppings if they desire to.If the customer want the pizza delivered they will be prompted to enter their location and contact details.On checkout the user is informed of the total cost of the order.
+
+## BDD
+The website is expected to function as follows:
+* 
 
 ## Installation/Setup instruction
 
@@ -17,16 +17,19 @@ cd Pizza
 
 open the code in your text editor.
 
+## Technologies Used
+* Javascript
+* HTML5
+* css
+* Markdown Syntax
 ## Live page
 https://Ndundiro.github.io/Pizza
 
-## Licence
-MIT Licence. Copyright (c) 2019 Ndundiro Kamau
 
-## Contact Information
+
+## Support and contact details
+
 If you need any information on my projects please contact me (ndundirokamau@gmail.com)
 
-## Technologies used
-* HTML
-* CSS
-* JAVASCRIPT
+## Licence
+MIT Licence. Copyright (c) 2019 Ndundiro Kamau
