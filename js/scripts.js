@@ -3,21 +3,18 @@ $(document).ready(function(){
 
 var size_prices= new Array();
 size_prices["None"]=0;
-size_prices["large"]=1000;
-size_prices["medium"]=800;
+size_prices["large"]=1200;
+size_prices["medium"]=900;
 size_prices["small"]=600;
 
-function getSizePrice()
+function sizePrice()
 {
     var pizzaSizePrice=0;
-    var theForm = document.forms["pizzaform"];
+    var theForm = document.forms["pizzainfo"];
      var selectedSize = theForm.elements["size"];
     pizzaSizePrice = size_prices[selectedSize.value];
     return pizzaSizePrice;
 }
-
-
-
 })
 
 
@@ -45,18 +42,17 @@ function getSizePrice()
 
 
 
-// submition of delivery Form
+// Delivery form inputs and alerts
 
-$(document).ready(function(){  
-    function deliverPizza(){
-var name = document.getElementById("name").value;
-var email = document.getElementById("number").value;
-var location = document.getElementById("location").value;
+$(document).ready(function () {
+    $("#delivery").submit(function () {
 
-if(name!=="" && email!=="" && location!==""){
-    alert("Your order has been successfuly received and will be delivered to " + location + "within one hour.Thank you for chosing the pizzeria.")
+        var name = $("input#name").val();
+        var number = $("input#number").val();
+        var location = $("input#location").val();
 
-}
-}
-
-})
+        alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.Thank you for chosing the pizzeria.");
+        $(this).get(0).reset();
+        event.preventDefault();
+    });
+});
