@@ -22,7 +22,7 @@ function getCrustCost() {
     return parseInt(selectedCrust);
 }
 function getNumber() {
-    var selectedNumber = document.getElementById("numberofpizza");
+    var selectedNumber = document.getElementById("numberofpizza").value;
     return parseInt(selectedNumber);
 }
 function mushrooms() {
@@ -69,8 +69,9 @@ function mozarellaCheese() {
 
 function calctotalPrice() {
     var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
-
-    alert("Your order of pizzas has been processed."  )
+    
+        console.log(totalPrice);
+    alert("Your order of pizzas has been processed." + totalPrice )
 }
 
 
@@ -85,6 +86,7 @@ $(document).ready(function () {
         var name = $("input#name").val();
         var number = $("input#number").val();
         var location = $("input#location").val();
+
 
         alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.Thank you for chosing the pizzeria.");
         $(this).get(0).reset();
