@@ -77,50 +77,51 @@
         </div>
         <div class="order row">
             <div class="col-md-6">
-                <form action="" id="pizzainfo" onsubmit="return false">
+                <h3>Enter your order details below <br>
+                Fill in the form </h3>
+                <form action="" id="pizzainfo" >
                     <label for="">Choose your pizza size</label>
-                    <select name="size" id="size">
-                        <option value="None">PIZZA SIZE</option>
+                    <select class="form-control" name="size" id="size">
                         <option value="large">Large @ 1200</option>
                         <option value="small">Medium @ 900</option>
                         <option value="small">Small @ 600</option>
                     </select>
-                    <br>
-                    <label for="">Choose your desired crust type</label> <br>
-                    <input type="radio" name="crust">Normal crust $ 200 <br>
-                    <input type="radio" name="crust">stuffed crust $230 <br>
-                    <input type="radio" name="crust">Crispy $250 <br>
-                    <input type="radio" name="crust">Glutten free $300 <br>
+                    
+            
+                    <label for="">Choose your desired crust type</label> 
+                    <select class="form-control" name="" id="">
+                    <option  name="crust">stuffed crust $230
+                    <option  name="crust">Crispy $250 
+                    <option  name="crust">Glutten free $300 
+                    </select>
 
-                    <label for="">Choose your Desired toppings</label> <br>
-                    <input type="checkbox" id="toppingone">Pepperoni <br>
-                    <input type="checkbox" id="toppingone">Mushrooms <br>
-                    <input type="checkbox" id="toppingone">Sausage <br>
-                    <input type="checkbox" id="toppingone">Onions <br>
-                    <input type="checkbox" id="toppingone">Tikka Sauce <br>
-                    <input type="checkbox" id="toppingone">Mozarella Cheese <br>
-                    <input type="checkbox" id="toppingone">Peppers and Chillies <br>
+                    <label for="">Choose your Desired toppings</label> 
+                    <select class="form-group form-control" name="" id="">
+                    <option type="checkbox" id="toppingone">Pepperoni 
+                    <option type="checkbox" id="toppingone">Mushrooms 
+                    <option type="checkbox" id="toppingone">Sausage 
+                    <option type="checkbox" id="toppingone">Onions 
+                    <option type="checkbox" id="toppingone">Tikka Sauce 
+                    <option type="checkbox" id="toppingone">Mozarella Cheese 
+                    <option type="checkbox" id="toppingone">Peppers and Chillies 
+                    </select>
                     <label for="">Input Quantity</label>
-                    <input type="number">
-                    <div id="totalPrice"></div>
-                    <input type='submit' id='submit' value='Check-Out' onclick="calculateTotal()" />
-                    <div class="show-total"></div>
+                    <input class="form-control" type="number"> <br>
+                    <button name="button" type="submit" id="submit" value="Check-Out">Submit</button>
                 </form>
 
             </div>
             <div class="col-md-6">
                 <h3>For delivery,please enter your location details below</h3>
-                <form action="">
+                <form id="delivery">
                     <label for="name">Name</label>
                     <input class="form-control" type="text" name="" id="name" required="required">
                     <label for="location">Location</label>
                     <input class="form-control" type="text" id="location" placeholder="location...">
                     <label for="phonenumber">Phone Number</label>
                     <input class="form-control" type="tel" placeholder="07xxxxxxxx" id="number"> <br>
-                    <button type="submit" id="submit" onclick="deliverpizza()">Submit</button>
-
+                    <button type="submit" name="button" id="submit">submit</button>
                 </form>
-
             </div>
 
         </div>
