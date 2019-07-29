@@ -1,42 +1,77 @@
-$(document).ready(function(){
-    var theForm = document.forms["pizzainfo"];
+// $(document).ready(function(){
+// $("#pizzainfo").submit(function(){
+ 
+//     var size = $("select#size").val();
+//     var  topping = $("select#crust").val();
+//     var crust = $("select#toppings").val();
 
-var size_prices= new Array();
-size_prices["None"]=0;
-size_prices["large"]=1200;
-size_prices["medium"]=900;
-size_prices["small"]=600;
+//         $(this).get(0).reset();
+//         event.preventDefault();
+  
+// })
+// })
+// Another trial on delivery
 
-function sizePrice()
-{
-    var pizzaSizePrice=0;
-    var theForm = document.forms["pizzainfo"];
-     var selectedSize = theForm.elements["size"];
-    pizzaSizePrice = size_prices[selectedSize.value];
-    return pizzaSizePrice;
+function getSizeCost() {
+    var selectedSize = document.getElementById("size").value;
+    return parseInt(selectedSize);
 }
-})
 
+function getCrustCost() {
+    var selectedCrust = document.getElementById("crust").value;
+    return parseInt(selectedCrust);
+}
+function getNumber() {
+    var selectedNumber = document.getElementById("numberofpizza");
+    return parseInt(selectedNumber);
+}
+function mushrooms() {
+    var mushroom = 0;
+    var addMushroom = document.getElementById("toppingone");
+    if (addMushroom.checked === true) {
+        mushroom = 150;
+    }
+    return parseInt(mushroom);
+}
 
+function sausages() {
+    var sausage = 0;
+    var addsausage = document.getElementById("toppingone");
+    if (addsausage.checked === true) {
+        sausage = 140;
+    }
+    return parseInt(sausage);
+}
+function onions() {
+    var onion = 0;
+    var addonions = document.getElementById("toppingone");
+    if (addMushroom.checked === true) {
+        onion = 130;
+    }
+    return parseInt(onion);
+}
+function tikkaSaucee() {
+    var tikkaSauce = 0;
+    var addtikkaSauce = document.getElementById("toppingone");
+    if (addtikkaSauce.checked === true) {
+        tikkaSauce = 120;
+    }
+    return parseInt(tikkaSauce);
+}
+function mozarellaCheese() {
+    var cheese = 0;
+    var addmozarellaCheese = document.getElementById("toppingone");
+    if (addmozarellaCheese.checked === true) {
+        cheese = 110;
+    }
+    return parseInt(cheese);
+}
 
+function calctotalPrice() {
+    var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    alert("Your order of pizzas has been processed."  )
+}
 
 
 

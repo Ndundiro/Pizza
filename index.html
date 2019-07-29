@@ -32,7 +32,7 @@
             </button>
         </div>
         <div class="menu">
-            <h3>Our full range of menu</h3>
+            <h3 class="text-center">Our full range of menu</h3>
             <div class="row">
                 <div class="col-md-6 mt-4">
                     <div>
@@ -82,32 +82,30 @@
                 <form action="" id="pizzainfo" >
                     <label for="">Choose your pizza size</label>
                     <select class="form-control" name="size" id="size">
-                        <option value="large">Large @ 1200</option>
-                        <option value="small">Medium @ 900</option>
-                        <option value="small">Small @ 600</option>
+                        <option value="1200">Large @ 1200</option>
+                        <option value="900">Medium @ 900</option>
+                        <option value="600">Small @ 600</option>
                     </select>
                     
             
                     <label for="">Choose your desired crust type</label> 
-                    <select class="form-control" name="" id="">
-                    <option  name="crust">stuffed crust $230
-                    <option  name="crust">Crispy $250 
-                    <option  name="crust">Glutten free $300 
+                    <select class="form-control" name="" id="crust">
+                    <option  value="230" name="crust">stuffed crust $230
+                    <option  value="250" name="crust">Crispy $250 
+                    <option  value="300" name="crust">Glutten free $300 
                     </select>
 
-                    <label for="">Choose your Desired toppings</label> 
-                    <select class="form-group form-control" name="" id="">
-                    <option type="checkbox" id="toppingone">Pepperoni 
-                    <option type="checkbox" id="toppingone">Mushrooms 
-                    <option type="checkbox" id="toppingone">Sausage 
-                    <option type="checkbox" id="toppingone">Onions 
-                    <option type="checkbox" id="toppingone">Tikka Sauce 
-                    <option type="checkbox" id="toppingone">Mozarella Cheese 
-                    <option type="checkbox" id="toppingone">Peppers and Chillies 
-                    </select>
+                    <label for="">Choose your Desired toppings</label> <br>
+
+                    <input value="150" type="checkbox" id="toppingone">Mushrooms 
+                    <input value="150" type="checkbox" id="toppingone">Sausage 
+                    <input value="150" type="checkbox" id="toppingone">Onions 
+                    <input value="150" type="checkbox" id="toppingone">Tikka Sauce 
+                    <input value="150" type="checkbox" id="toppingone">Mozarella Cheese 
+                    
                     <label for="">Input Quantity</label>
-                    <input class="form-control" type="number"> <br>
-                    <button name="button" type="submit" id="submit" value="Check-Out">Submit</button>
+                    <input class="form-control form-group" type="text" id="numberofpizza"> 
+                    <button name="button" type="submit" id="submit" value="Check-Out" onclick="calctotalPrice()">Submit</button>
                 </form>
 
             </div>
