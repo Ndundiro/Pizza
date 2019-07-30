@@ -16,29 +16,21 @@
 <body>
     <div class="main container">
         <div class="navbar">
-            <!-- <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6bGaWtWqtr6C9D0Q4up_GpObNg3WmGy0BYV2i3xI-CvyygS-W"
-                    alt="">
-            </div> -->
-
+            
         </div>
         <div class="landingpage">
-            <p class="text-white">The PIzzEria</p>
-            <p class="text-white">An oasis of pleasure</p>
-            <p class="text-white">Welcome to the pizza place</p>
+            <p class="text-white text-bold text-center">The PIzzEria</p>
+            
 
-            <button class="btn btn-danger">button
-
-            </button>
         </div>
         <div class="menu">
             <h3 class="text-center">Our full range of menu</h3>
             <div class="row">
                 <div class="col-md-6 mt-4">
                     <div>
-                        <img class="card-img-top" src="images/mypizza4.jpg">
+                        <img class="card-img-top one" src="images/mypizza4.jpg">
                     </div>
-                    <div class="overlay">
+                    <div class="overlay1">
                         <h5 class="text-bold">CHICKEN TIKKA
                             Mozzarella Cheese, Chicken, Green Peppers, Chillies, Tikka Sauce</h5>
                     </div>
@@ -57,7 +49,7 @@
             <div class="row">
                 <div class="col-md-6 mt-4">
                     <div>
-                        <img class="card-img-top" src="images.mypizza3.jpg">
+                        <img class="card-img-top" src="images/mypizza3.jpg">
                     </div>
                     <div class="overlay">
                         <h5 class="text-bold">CHICKEN TIKKA
@@ -66,7 +58,7 @@
                 </div>
                 <div class="col-md-6 mt-4">
                     <div>
-                        <img class="card-img-top" src="images.mypizza6.jpg" >
+                        <img class="card-img-top" src="images/mypizza6.jpg" >
                     </div>
                     <div class="overlay">
                         <h5 class="text-bold">CHICKEN TIKKA
@@ -82,17 +74,17 @@
                 <form action="" id="pizzainfo" >
                     <label for="">Choose your pizza size</label>
                     <select class="form-control" name="size" id="size">
-                        <option value="1200">Large @ 1200</option>
-                        <option value="900">Medium @ 900</option>
-                        <option value="600">Small @ 600</option>
+                        <option value="1200">Large @ ksh 1200</option>
+                        <option value="900">Medium @ ksh 900</option>
+                        <option value="600">Small @ ksh 600</option>
                     </select>
                     
             
                     <label for="">Choose your desired crust type</label> 
                     <select class="form-control" name="" id="crust">
-                    <option  value="230" name="crust">stuffed crust $230
-                    <option  value="250" name="crust">Crispy $250 
-                    <option  value="300" name="crust">Glutten free $300 
+                    <option  value="230" name="crust">stuffed crust @ ksh230
+                    <option  value="250" name="crust">Crispy @  ksh 250 
+                    <option  value="300" name="crust">Glutten free @ ksh 300 
                     </select>
 
                     <label for="">Choose your Desired toppings</label> <br>
@@ -107,10 +99,13 @@
                     <input class="form-control form-group" type="text" id="numberofpizza"> 
                     <button name="button" type="submit" id="submit" value="Check-Out" onclick="calctotalPrice()">Submit</button>
                 </form>
-
             </div>
+
+            
+
             <div class="col-md-6">
-                <h3>For delivery,please enter your location details below</h3>
+                    <div id="formlocation">
+                <h3>For delivery services,enter your location details below</h3>
                 <form id="delivery">
                     <label for="name">Name</label>
                     <input class="form-control" type="text" name="" id="name" required="required">
@@ -121,12 +116,10 @@
                     <button type="submit" name="button" id="submit">submit</button>
                 </form>
             </div>
-
+                </div>
         </div>
 
-        <div class="aboutus">
-            <h2>A story of love,satisfaction and lots and lots of pizza</h2>
-        </div>
+        
 
 
 
