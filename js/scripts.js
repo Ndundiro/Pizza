@@ -1,17 +1,3 @@
-// $(document).ready(function(){
-// $("#pizzainfo").submit(function(){
- 
-//     var size = $("select#size").val();
-//     var  topping = $("select#crust").val();
-//     var crust = $("select#toppings").val();
-
-//         $(this).get(0).reset();
-//         event.preventDefault();
-  
-// })
-// })
-// Another trial on delivery
-
 function getSizeCost() {
     var selectedSize = document.getElementById("size").value;
     return parseInt(selectedSize);
@@ -67,11 +53,13 @@ function mozarellaCheese() {
     return parseInt(cheese);
 }
 
-function calctotalPrice() {
+function calctotalPrice(e) {
+    event.preventDefault();
     var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
     
         console.log(totalPrice);
     alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +"." )
+
 }
 
 
@@ -88,18 +76,8 @@ $(document).ready(function () {
         var location = $("input#location").val();
 
         alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the pizzeria.");
-        $(this).get(0).reset();
-        event.preventDefault();
+        // $(this).get(0).reset();
+        //  event.preventDefault();
     });
-    // $("#appendform").click(function(){
-    //     $("#appendform").slideup();
-    // })
-    // $(".one").hover(function () {
-    //     $(".overlay, this").slideToggle('slow');
-    // }, function () {
-    //     $(".overlay, this").slideToggle('slow');
-    // });
-
-
-
+    
 });
